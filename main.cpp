@@ -102,7 +102,7 @@ public:
 
     void mostrarInfo(){
         cout << "\t\tISBN: " << isbn << endl;
-        cout << "\t\tTítulo: " << titulo << endl;
+        cout << "\t\tTï¿½tulo: " << titulo << endl;
         cout << "\t\tPrecio de Compra: $" << precioCompra << endl;
         cout << "\t\tPrecio de Venta: $" << precioVenta << endl;
         cout << "\t\tCantidad Actual: " << cantidadActual << endl;
@@ -202,7 +202,7 @@ int main() {
     while (true) {
         cout << "\t\t\t\tBIENVENIDO\n" << "Dinero: $" << dineroEnCaja << endl;
         cout << "\t1. Registrar un libro en el catalogo" << endl;
-        cout << "\t2. Eliminar un libro del catálogo" << endl;
+        cout << "\t2. Eliminar un libro del catalogo" << endl;
         cout << "\t3. Buscar un libro" << endl;
         cout << "\t4. Abastecer libros" << endl;
         cout << "\t5. Vender libros" << endl;
@@ -212,7 +212,7 @@ int main() {
 	
         int opcion;
         cin >> opcion;
-		system("cls");
+		system("clear");
         switch (opcion) {
             case 1: {
             	cout << "\t\t\t\tAGREGAR" << endl;
@@ -232,7 +232,7 @@ int main() {
 				isbn++;
                 cout << "\tLibro registrado en el catalogo." << endl;
                	system("pause");
-                system("cls");
+                system("clear");
 			    break;
             }
             case 2: {
@@ -245,7 +245,7 @@ int main() {
                 cout << "\tLibro eliminado del catalogo." << endl;
                 break;
                 system("pause");
-                system("cls");
+                system("clear");
             }
             case 3: {
             	cout << "\t\t\t\tBUSQUEDA" << endl;
@@ -254,7 +254,7 @@ int main() {
             	cin >> choose;
 	            	if (choose == 1){
 		                string titulo;
-		                	cout << "\tTítulo del libro a buscar: ";
+		                	cout << "\tTitulo del libro a buscar: ";
 		                	cin.ignore();
 		                	getline(cin, titulo);
 		
@@ -277,7 +277,7 @@ int main() {
 		                		}
 	          		}
 	          	system("pause");
-                system("cls");
+                system("clear");
                 break;
 			}
             case 4: {
@@ -296,7 +296,7 @@ int main() {
                     cout << "\tLibro no encontrado." << endl;
                 }
 	          	system("pause");
-                system("cls");
+                system("clear");
                 break;
             }
             case 5: {
@@ -320,7 +320,7 @@ int main() {
                     cout << "\tLibro no encontrado." << endl;
                 }
 	          	system("pause");
-                system("cls");                
+                system("clear");                
                 break;
             }
             case 6: {
@@ -331,7 +331,7 @@ int main() {
 	                if (choose == 1){
 		                Libro* masCostoso = catalogo.buscarLibroMasCostoso();
 			                if (masCostoso != 0) {
-			                    cout << "\tLibro más costoso:" << endl;
+			                    cout << "\tLibro mas costoso:" << endl;
 			                    masCostoso->mostrarInfo();
 			                } else {
 			                    cout << "\tNo hay libros registrados en el catalogo." << endl;
@@ -347,7 +347,7 @@ int main() {
 		        	}else if (choose == 3){
 		                Libro* masVendido = catalogo.buscarLibroMasVendido();
 			                if (masVendido != 0) {
-			                    cout << "\tLibro más vendido:" << endl;
+			                    cout << "\tLibro mas vendido:" << endl;
 			                    masVendido->mostrarInfo();
 			                } else {
 			                    cout << "\tNo hay libros registrados en el catalogo." << endl;
@@ -356,7 +356,7 @@ int main() {
 		            	cout << "\tOpcion no valida" << endl;
 		            }
 	                system("pause");
-	                system("cls");
+	                system("clear");
 	                break;
 	    	}
             case 7: {
